@@ -62,7 +62,7 @@ static void get_field(uint32_t * dst, unsigned char * src, uint8_t len)
     }
 }
 
-sc_size_t sc_make_message(struct sercomm * sc, sc_cmd_t cmd, sc_cctrl_c cctrl,
+sc_size_t sc_make_message(struct sercomm * sc, sc_cmd_t cmd, sc_cctrl_t cctrl,
         unsigned char * msg, sc_size_t mlen,
         unsigned char * output, sc_size_t olen)
 {

@@ -32,15 +32,15 @@
 //#define SERCOMM_USE_TINY_SC
 
 #ifdef SERCOMM_USE_TINY_SC
-typedef uint8_t								sc_size_t
-typedef uint8_t								sc_cmd_t
-typedef uint8_t								sc_cctrl_t
+typedef uint8_t								sc_size_t;
+typedef uint8_t								sc_cmd_t;
+typedef uint8_t								sc_cctrl_t;
 /*! \brief Ignore message validity check. Use in message_max_len in struct sercomm */
 #define SERCOMM_IGNORE_MSG_VALID_LENGTH		UINT8_MAX
 #else
-typedef uint32_t							sc_size_t
-typedef uint32_t							sc_cmd_t
-typedef uint32_t							sc_cctrl_t
+typedef uint32_t							sc_size_t;
+typedef uint32_t							sc_cmd_t;
+typedef uint32_t							sc_cctrl_t;
 /*! \brief Ignore message validity check. Use in message_max_len in struct sercomm */
 #define SERCOMM_IGNORE_MSG_VALID_LENGTH		UINT32_MAX
 #endif
